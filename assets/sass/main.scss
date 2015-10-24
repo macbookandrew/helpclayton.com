@@ -602,6 +602,10 @@
 		}
 	}
 
+    .paypal-button {
+        margin-bottom: 1em;
+    }
+
 	.dark {
 		input[type="button"],
 		input[type="submit"],
@@ -709,9 +713,6 @@
 			display: none;
 		}
 
-        &.paypal-button {
-            width: 50%;
-        }
 	}
 
 /* Header */
