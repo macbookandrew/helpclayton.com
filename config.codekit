@@ -262,13 +262,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/paypal.png": {
+	"\/images\/paypal-onetime.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 8687,
-		"inputAbbreviatedPath": "\/images\/paypal.png",
-		"outputAbbreviatedPath": "\/images\/paypal.png",
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/paypal-onetime.png",
+		"outputAbbreviatedPath": "\/images\/paypal-onetime.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/paypal-recurring.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8723,
+		"inputAbbreviatedPath": "\/images\/paypal-recurring.png",
+		"outputAbbreviatedPath": "\/images\/paypal-recurring.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
