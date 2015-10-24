@@ -1,0 +1,8 @@
+assets/css/ie8.css:assets/sass/ie8.scss
+assets/css/ie8.css.map:assets/sass/ie8.scss
+
+assets/css/ie9.css:assets/sass/ie9.scss
+assets/css/ie9.css.map:assets/sass/ie9.scss
+
+assets/css/main.css:assets/sass/main.scss
+assets/css/main.css.map:assets/sass/main.scss
