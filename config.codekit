@@ -214,7 +214,7 @@
 		"useLibsass": 0
 		},
 	"\/assets\/sass\/main.scss": {
-		"createSourceMap": 1,
+		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
@@ -224,8 +224,8 @@
 		"outputAbbreviatedPath": "\/assets\/css\/main.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"shouldRunAutoprefixer": 1,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
