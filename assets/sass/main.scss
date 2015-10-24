@@ -847,6 +847,14 @@
     }
 
 
+    @media (min-width: 1280px) {
+        #first {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 2em 0;
+        }
+    }
+
 /* Wide */
 
 	@include breakpoint(wide) {
