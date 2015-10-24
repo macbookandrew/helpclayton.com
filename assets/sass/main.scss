@@ -1000,6 +1000,10 @@
 
 		/* Basic */
 
+            * {
+                font-weight: 400 !important;
+            }
+
 			body, input, textarea, select {
 				font-size: 11pt;
 			}
