@@ -35,7 +35,7 @@
 '5'+'4'+';'+'F'+'m'+"'"+'>send him a note of encouragement<'+'/'+'a'+'>');</script><noscript>[Turn on JavaScript to see the email address]</noscript>.</li>
                         </ol>
                         <p><a class="social-icon" href="https://www.facebook.com/sharer.php?u=http://helpclayton.com" onclick="window.open(this.href, 'Share on Facebook', 'resizable=0,width=550,screenY=150,left=150,screenX=150,status=0,scrollbars=0,menubar=0,statusbar=0,titlebar=no,top=150,toolbar=0,location=0,height=445').focus(); return false;"><img src="assets/css/images/facebook.svg" alt="Share on Facebook" /></a> <a class="social-icon" href="https://twitter.com/share?url=http://helpclayton.com" onclick="window.open(this.href, 'Share on Twitter', 'resizable=0,width=550,screenY=150,left=150,screenX=150,status=0,scrollbars=0,menubar=0,statusbar=0,titlebar=no,top=150,toolbar=0,location=0,height=445').focus(); return false;"><img src="assets/css/images/twitter.svg" alt="Share on Twitter" /></a></p>
-                        <p><a href="#second" onclick="EPPZScrollTo.scrollVerticalToElementById('second', 20);" class="button">More Information &darr;</a></p>
+                        <p><a href="#second" onclick="EPPZScrollTo.scrollVerticalToElementById('second', 20);" class="button" data-button-value="Scroll">More Information &darr;</a></p>
                     </div>
                 </header>
             </section>
@@ -95,14 +95,14 @@
                                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="paypal-button">
                                             <input type="hidden" name="cmd" value="_s-xclick">
                                             <input type="hidden" name="hosted_button_id" value="TZ3WTETEHD4SQ">
-                                            <input class="button" type="submit" name="submit" alt="PayPal - The safer, easier way to pay online!" value="Give Once &rarr;">
+                                            <input class="button" type="submit" name="submit" alt="PayPal - The safer, easier way to pay online!" value="Give Once &rarr;" data-button-value="GiveOnce">
                                             <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
                                         </form>
 
                                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="paypal-button">
                                             <input type="hidden" name="cmd" value="_s-xclick">
                                             <input type="hidden" name="hosted_button_id" value="LFLR4KZS4WQTL">
-                                            <input class="button" type="submit" name="submit" alt="PayPal - The safer, easier way to pay online!" value="Give Regularly &rarr;">
+                                            <input class="button" type="submit" name="submit" alt="PayPal - The safer, easier way to pay online!" value="Give Regularly &rarr;" data-button-value="GiveRegularly">
                                             <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
                                         </form>
 
@@ -112,7 +112,7 @@
                         <div class="row">
                             <div class="12u">
                                 <footer>
-                                    <a href="http://wwntbm.com/connect/missionaries/clayton-and-linda-eliam/" class="button scrolly">More Information &rarr;</a>
+                                    <a href="http://wwntbm.com/connect/missionaries/clayton-and-linda-eliam/" class="button scrolly" data-button-value="MoreInformation">More Information &rarr;</a>
                                 </footer>
                             </div>
                         </div>
@@ -130,17 +130,37 @@
             </section>
 
         <!-- Scripts -->
-            <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+        <script>
+            !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
+            fbq('init', '1936272853263631');
+            fbq('track', "PageView");
+        </script>
+        <noscript>
+            <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1936272853263631&ev=PageView&noscript=1" />
+        </noscript>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
             ga('create', 'UA-24916229-4', 'auto');
             ga('send', 'pageview');
         </script>
+        <script>
+            var clickHandler = function( clickedLink ) {
+                var buttonValue = clickedLink.target.getAttribute('data-button-value');
+                fbq('track', 'InitiateCheckout');
+                ga('send', 'event', 'button', 'InitiateCheckout', buttonValue);
+            }
+            var anchors = document.getElementsByClassName('button');
+            for (var i=0; i<anchors.length; i++) {
+                var current = anchors[i];
+                current.addEventListener('click', clickHandler);
+            }
+        </script>
+        <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 
         <script>
         /**
